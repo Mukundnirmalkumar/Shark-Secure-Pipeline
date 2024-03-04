@@ -1,0 +1,32 @@
+
+Testing /Users/goldy/Desktop/AWS/Shark-Secure-Pipeline ...
+
+ ✗ [Medium] Allocation of Resources Without Limits or Throttling 
+   Path: app.js, line 13 
+   Info: This endpoint handler performs a file system operation and does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+
+ ✗ [Medium] Allocation of Resources Without Limits or Throttling 
+   Path: app.js, line 17 
+   Info: This endpoint handler performs a file system operation and does not use a rate-limiting mechanism. It may enable the attackers to perform Denial-of-service attacks. Consider using a rate-limiting middleware such as express-limit.
+
+ ✗ [Medium] Cross-Site Request Forgery (CSRF) 
+   Path: app.js, line 2 
+   Info: CSRF protection is disabled for your Express app. This allows the attackers to execute requests on a user's behalf.
+
+ ✗ [Medium] Information Exposure 
+   Path: app.js, line 2 
+   Info: Disable X-Powered-By header for your Express app (consider using Helmet middleware), because it exposes information about the used framework to potential attackers.
+
+
+✔ Test completed
+
+Organization:      mukund.nirmal
+Test type:         Static code analysis
+Project path:      /Users/goldy/Desktop/AWS/Shark-Secure-Pipeline
+
+Summary:
+
+  4 Code issues found
+  4 [Medium] 
+
+

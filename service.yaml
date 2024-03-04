@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Service
+metadata: 
+  name: my-service
+
+spec:
+  type: NodePort
+  selector:
+    app: custom
+  ports: 
+    - protocol: TCP
+      targetport: 8080
+      port: 8080
+      nodePort: 30008
+
